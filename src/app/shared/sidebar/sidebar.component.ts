@@ -8,8 +8,8 @@ import { GifsService } from '../../gifs/services/gifs.service';
 })
 export class SidebarComponent {
  
-  get historial(){
-    return this.gifsService.historial;
+  historial(){
+    return this.gifsService.historial();
   }
 
   constructor(private gifsService:GifsService) { }
