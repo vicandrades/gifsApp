@@ -12,7 +12,7 @@ export class GifsService {
   private _historial:string[]=[];
   public resultados:Gif[]=[];
 
-  historial():string[]{
+  get historial():string[]{
     return [...this._historial];
   }
 
